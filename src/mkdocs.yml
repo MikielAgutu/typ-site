@@ -1,4 +1,4 @@
-site_name: Typeset
+site_name: Typ
 theme:
   name: cinder
   custom_dir: cinder-theme-ext

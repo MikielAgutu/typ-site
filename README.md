@@ -1,3 +1,3 @@
-# Typeset website
+# Typ website
 
-Website for Typeset
+Website for Typ
