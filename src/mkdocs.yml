@@ -1,6 +1,10 @@
 site_name: Typeset
-theme: cinder
+theme:
+  name: cinder
+  custom_dir: cinder-theme-ext
 nav:
   - Home: index.md
   - About: about.md
 site_dir: ../docs
+
+copyright: © Mikiel Agutu 2019

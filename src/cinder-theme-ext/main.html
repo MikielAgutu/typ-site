@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block extrahead %}
+      <meta name="author" content="Mikiel Agutu">
+{% endblock %}
+
+{% block footer %}
+<hr>
+<p>{% if config.copyright %}
+      <small>{{ config.copyright }}<br></small>
+{% endif %}
+<small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a></small>
+{% if page.meta.revision_date %}
+      <small><br><i>Updated {{ page.meta.revision_date }}</i></small>
+{% endif %}
+</p>
+{% endblock %}
