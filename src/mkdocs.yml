@@ -1,6 +1,6 @@
 site_name: Typeset
+theme: cinder
 nav:
   - Home: index.md
   - About: about.md
-theme: readthedocs
 site_dir: ../docs
