@@ -5,6 +5,10 @@ theme:
 nav:
   - Home: index.md
   - About: about.md
+  - Usage:
+    - Installation: documentation/installation.md
+    - Projects: documentation/projects.md
+    - Command Line: documentation/command-line.md
 site_dir: ../docs
 
 copyright: © Mikiel Agutu 2019
