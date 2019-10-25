@@ -4,9 +4,9 @@ Typ is a simple typesetting application. Turn plain Markdown into a formatted PD
 
 ## Features
 
-- Create entire books in markdown
+- Create entire books in Markdown
 - Simple command line interface
-- Easily configure dimensions, fonts, typesetting, and so on
+- Easily configure page dimensions, fonts, typesetting, and so on
 - Produce PDFs usable by print on demand services
 - Cross platform (Soon...)
 
