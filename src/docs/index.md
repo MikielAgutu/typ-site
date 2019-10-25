@@ -6,7 +6,14 @@ Typ is a simple typesetting application. Turn plain Markdown into a formatted PD
 
 - Create entire books in markdown
 - Simple command line interface
-- Easily configure dimensions, fonts, typsetting, and so on
-- Produce PDFs to pass on to print on demand services
-- Support for cover images
+- Easily configure dimensions, fonts, typesetting, and so on
+- Produce PDFs usable by print on demand services
 - Cross platform (Soon...)
+
+## Get started
+
+Ready to start? See [Getting Started](./getting-started.md).
+
+## Comments? Questions?
+
+You can view the entire source code for this site on it's [GitHub page](https://github.com/MikielAgutu/typ-site). Feel free to open a Pull Request to make your own contribution. Alternatively, if you have any feature requests or bug reports, then open an issue.

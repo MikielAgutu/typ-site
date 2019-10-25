@@ -4,11 +4,15 @@ theme:
   custom_dir: cinder-theme-ext
 nav:
   - Home: index.md
-  - About: about.md
+  - Getting Started: getting-started.md
   - Usage:
-    - Installation: documentation/installation.md
-    - Projects: documentation/projects.md
-    - Command Line: documentation/command-line.md
+    - Installation: usage/installation.md
+    - Projects: usage/projects.md
+    - Configuration: usage/configuration.md
+    - Command Line: usage/command-line.md
+    - Writing Markdown: usage/writing-markdown.md
+  - About: about.md
+  - Contact: contact.md
 site_dir: ../docs
 
 copyright: © Mikiel Agutu 2019
