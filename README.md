@@ -13,6 +13,7 @@ Website for Typ. Built using [MkDocs](https://www.mkdocs.org/). Uses the [Cinder
 - `pip` (Python package manager)
 - `pip install mkdocs`
 - `pip install mkdocs-cinder`
+- `pip install mkdocs-markdownextradata-plugin`
 
 ## Development server
 

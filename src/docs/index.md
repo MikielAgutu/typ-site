@@ -12,7 +12,11 @@ Typ is a simple typesetting application. Turn plain Markdown into a formatted PD
 
 ## Get started
 
-Ready to start? See [Getting Started](./getting-started.md).
+New to Typ? See [Getting Started](./getting-started.md).
+
+## Download and install
+
+If you're already familiar with Typ, you can download and install it from the [Installation](./usage/installation.md) page.
 
 ## Comments? Questions?
 

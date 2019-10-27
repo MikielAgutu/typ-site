@@ -8,20 +8,20 @@
     
     
     
-    <link rel="img/favicon.ico">
+    <link rel="../img/favicon.ico">
 
     
-    <title>Home - Typ</title>
+    <title>Getting Started - Typ</title>
     
 
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
     <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
-    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
-    <link href="css/base.min.css" rel="stylesheet">
-    <link href="css/cinder.min.css" rel="stylesheet">
-    <link href="css/highlight.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet">
+    <link href="../css/cinder.min.css" rel="stylesheet">
+    <link href="../css/highlight.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -45,7 +45,7 @@
 
 </head>
 
-<body class="homepage" >
+<body>
 
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
@@ -63,7 +63,7 @@
 
             <!-- Main title -->
 
-            <a class="navbar-brand" href=".">Typ</a>
+            <a class="navbar-brand" href="..">Typ</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -72,14 +72,14 @@
                 <ul class="nav navbar-nav">
                 
                 
-                    <li class="active">
-                        <a href=".">Home</a>
+                    <li >
+                        <a href="..">Home</a>
                     </li>
                 
                 
                 
-                    <li >
-                        <a href="getting-started/">Getting Started</a>
+                    <li class="active">
+                        <a href="./">Getting Started</a>
                     </li>
                 
                 
@@ -90,31 +90,31 @@
                         
                             
 <li >
-    <a href="usage/installation/">Installation</a>
+    <a href="../usage/installation/">Installation</a>
 </li>
 
                         
                             
 <li >
-    <a href="usage/projects/">Projects</a>
+    <a href="../usage/projects/">Projects</a>
 </li>
 
                         
                             
 <li >
-    <a href="usage/configuration/">Configuration</a>
+    <a href="../usage/configuration/">Configuration</a>
 </li>
 
                         
                             
 <li >
-    <a href="usage/command-line/">Command Line</a>
+    <a href="../usage/command-line/">Command Line</a>
 </li>
 
                         
                             
 <li >
-    <a href="usage/writing-markdown/">Writing Markdown</a>
+    <a href="../usage/writing-markdown/">Writing Markdown</a>
 </li>
 
                         
@@ -124,32 +124,32 @@
                 
                 
                     <li >
-                        <a href="releases/">Releases</a>
+                        <a href="../releases/">Releases</a>
                     </li>
                 
                 
                 
                     <li >
-                        <a href="about/">About</a>
+                        <a href="../about/">About</a>
                     </li>
                 
                 
                 
                     <li >
-                        <a href="contact/">Contact</a>
+                        <a href="../contact/">Contact</a>
                     </li>
                 
                 
                 </ul>
 
             <ul class="nav navbar-nav navbar-right">
-                    <li class="disabled">
-                        <a rel="prev" >
+                    <li >
+                        <a rel="prev" href="..">
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="next" href="getting-started/">
+                        <a rel="next" href="../usage/installation/">
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
@@ -163,35 +163,61 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#typ">Typ</a></li>
-            <li class="second-level"><a href="#features">Features</a></li>
+        <li class="first-level active"><a href="#getting-started">Getting started</a></li>
+            <li class="second-level"><a href="#your-first-book">Your first book</a></li>
                 
-            <li class="second-level"><a href="#get-started">Get started</a></li>
-                
-            <li class="second-level"><a href="#download-and-install">Download and install</a></li>
-                
-            <li class="second-level"><a href="#comments-questions">Comments? Questions?</a></li>
-                
+                <li class="third-level"><a href="#further-reading">Further reading</a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="typ">Typ</h1>
-<p>Typ is a simple typesetting application. Turn plain Markdown into a formatted PDF ready for print. Focus on content, not formatting.</p>
-<h2 id="features">Features</h2>
+<h1 id="getting-started">Getting started</h1>
+<p>Typ is a simple typesetting application.</p>
+<p>It allows you to turn plain Markdown into a formatted PDF ready for print. It is accessed through a command line interface.</p>
+<h2 id="your-first-book">Your first book</h2>
+<p>First install Typ. See <a href="../usage/installation/">Installation</a>.</p>
+<p>Next, you need to create a Project. This is where your book's files will live.</p>
+<p>Create a new folder on your machine. Inside the folder create the following files:</p>
 <ul>
-<li>Create entire books in Markdown</li>
-<li>Simple command line interface</li>
-<li>Easily configure page dimensions, fonts, typesetting, and so on</li>
-<li>Produce PDFs usable by print on demand services</li>
-<li>Cross platform (Soon...)</li>
+<li><code>text.md</code></li>
+<li><code>preamble.md</code></li>
+<li><code>config.json</code></li>
 </ul>
-<h2 id="get-started">Get started</h2>
-<p>New to Typ? See <a href="getting-started/">Getting Started</a>.</p>
-<h2 id="download-and-install">Download and install</h2>
-<p>If you're already familiar with Typ, you can download and install it from the <a href="usage/installation/">Installation</a> page.</p>
-<h2 id="comments-questions">Comments? Questions?</h2>
-<p>You can view the entire source code for this site on it's <a href="https://github.com/MikielAgutu/typ-site">GitHub page</a>. Feel free to open a Pull Request to make your own contribution. Alternatively, if you have any feature requests or bug reports, then open an issue.</p></div>
+<p>Open <code>text.md</code> and write something. If you need inspiration, copy this:</p>
+<pre><code class="markdown"># Chapter 1 - Down the Rabbit Hole
+Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, ‘and what is the use of a book,’ thought Alice ‘without pictures or conversations?’
+</code></pre>
+
+<p>Open <code>preamble.md</code> and write your name and the current date. Something like this:</p>
+<pre><code class="markdown">Joe Bloggs
+
+21/10/2019
+
+*All rights reserved*
+</code></pre>
+
+<p>See <a href="./usage/Projects.md">Projects</a> for more information.</p>
+<p>Finally, configure your Project. Open <code>config.json</code> and paste in the following:</p>
+<pre><code class="json">{
+  &quot;title&quot;: &quot;Alice in Wonderland&quot;,
+  &quot;fontFamily&quot;: &quot;Arial&quot;,
+  &quot;pageSize&quot;: &quot;A5&quot;,
+  &quot;pageMargin&quot;: &quot;70pt 60pt 70pt&quot;,
+  &quot;textLineHeight&quot;: &quot;200%&quot;,
+  &quot;fontSize&quot;: &quot;24pt&quot;,
+  &quot;generateTableOfContents&quot;: true,
+  &quot;pdfTkPath&quot;: &quot;C:\\Programs\\bin\\pdftk.exe&quot;
+}
+</code></pre>
+
+<p>Finally, run Typ from the command line. Open a command line terminal and run <code>typ typeset</code>. Your ready-to-print PDF will be created and placed in the Project directory. See <a href="../usage/command-line/">Command Line</a> for more information.</p>
+<p>That's it! You're now ready to begin creating books.</p>
+<h3 id="further-reading">Further reading</h3>
+<p>To do more with Typ, you'll want to read these pages:</p>
+<ul>
+<li><a href="../usage/configuration/">Configuration</a></li>
+<li><a href="../usage/writing-markdown/">Writing Markdown</a></li>
+</ul></div>
         
         
     </div>
@@ -208,12 +234,12 @@
 
     </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap-3.0.3.min.js"></script>
-    <script src="js/highlight.pack.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script>var base_url = "."</script>
+    <script>var base_url = ".."</script>
     
-    <script src="js/base.js"></script>
+    <script src="../js/base.js"></script>
 
     <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -258,8 +284,3 @@
     </body>
 
 </html>
-
-<!--
-MkDocs version : 1.0.4
-Build Date UTC : 2019-10-27 21:54:06
--->

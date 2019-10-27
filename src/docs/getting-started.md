@@ -6,7 +6,7 @@ It allows you to turn plain Markdown into a formatted PDF ready for print. It is
 
 ## Your first book
 
-First install Typ. See [Installation](./usage/installation.md)
+First install Typ. See [Installation](./usage/installation.md).
 
 Next, you need to create a Project. This is where your book's files will live.
 
