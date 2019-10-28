@@ -25,7 +25,7 @@ These options generally have an equivalent CSS property. For instance, `textLine
 | `textLineHeight` | Sets the distance between lines of text | [`line-height`](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height) | `2.5` |
 | `pageMargin` | The margin between the edge of the page and the content | [`margin`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin) | `10px` |
 | `pageSize` | The size of the page | [`size`](https://developer.mozilla.org/en-US/docs/Web/CSS/@page/size) | `A5`, `4in 6in` |
-| `fontFamily` | Font for all text content | [`font-family`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family) | `system-ui` |
+| `fontFamily` | Font for all text content. Currently supported fonts: `georgia`, `times new roman`, `arial` & `verdana` | [`font-family`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family) | `system-ui` |
 | `fontSize` | Font size for main content | [`font-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size) | `2em` |
 
 ### Example `config.json`
@@ -37,7 +37,7 @@ These options generally have an equivalent CSS property. For instance, `textLine
   "pageSize": "A5",
   "pageMargin": "70pt 60pt 70pt",
   "textLineHeight": "200%",
-  "fontSize": "24pt",
+  "fontSize": "12pt",
   "generateTableOfContents": true,
   "pdfTkPath": "C:\\Programs\\bin\\pdftk.exe"
 }

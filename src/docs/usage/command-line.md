@@ -2,6 +2,6 @@
 
 First, ensure you have set up a Project correctly. See [Projects](./projects.md).
 
-Open a command line terminal in the Project directory and run `typ typeset`.
+In a command line terminal, navigate to your Project directory and run `typ typeset`.
 
-Typ will use the files in the working directory to create a book. The PDF for the book will be placed in the Project directory.
+Typ will use the files in the Project directory to create a book. The PDF for the book will be placed in the Project directory.

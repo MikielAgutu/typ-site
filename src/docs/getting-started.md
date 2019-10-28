@@ -33,8 +33,6 @@ Joe Bloggs
 *All rights reserved*
 ```
 
-See [Projects](./usage/Projects.md) for more information.
-
 Finally, configure your Project. Open `config.json` and paste in the following:
 
 ```json
@@ -44,12 +42,25 @@ Finally, configure your Project. Open `config.json` and paste in the following:
   "pageSize": "A5",
   "pageMargin": "70pt 60pt 70pt",
   "textLineHeight": "200%",
-  "fontSize": "24pt",
-  "generateTableOfContents": true,
-  "pdfTkPath": "C:\\Programs\\bin\\pdftk.exe"
+  "fontSize": "12pt",
+  "generateTableOfContents": true 
 }
 ```
-Finally, run Typ from the command line. Open a command line terminal and run `typ typeset`. Your ready-to-print PDF will be created and placed in the Project directory. See [Command Line](./usage/command-line.md) for more information.
+Finally, it's time to run Typ. Open a command line terminal and navigate to your Project folder. 
+
+Run `typ typeset` from the command line.
+
+Your ready-to-print PDF will be created and placed in the Project directory. See [Command Line](./usage/command-line.md) for more information.
+
+### Add cover images
+
+Typ supports front and back cover images.
+
+Download the two sample images [`front-cover.png`](./front-cover.png) and [`back-cover.png`](./back-cover.png).
+
+Place these two files in your Project folder.
+
+Run `typ typeset` again. Typ will automatically pick up the cover images and add them to your book.
 
 That's it! You're now ready to begin creating books.
 
@@ -57,5 +68,6 @@ That's it! You're now ready to begin creating books.
 
 To do more with Typ, you'll want to read these pages:
 
+- [Projects](./usage/projects.md)
 - [Configuration](./usage/configuration.md)
 - [Writing Markdown](./usage/writing-markdown.md)

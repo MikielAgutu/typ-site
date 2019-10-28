@@ -23,5 +23,5 @@ Typ depends on a command line application called PDFtk Server.
 
 Download and install [PDFtk Server](https://www.pdflabs.com/tools/pdftk-server/) following the instructions on their website. Ensure it's available on your `PATH`, which can be tested after installation by running `pdftk` from the command line.
 
-Think this is annoying? PDFtk Server requires a paid license for redistribution. If you'd like to assist in overcoming this limitation and make Typ a better product see [Contact](./contact.md).
+Think this is annoying? PDFtk Server requires a paid license for redistribution. If you'd like to help improve Typ by sponsoring the redistribution license see [Contact](./contact.md).
 
