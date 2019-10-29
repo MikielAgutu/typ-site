@@ -6,7 +6,7 @@ Follow these steps to download and install Typ.
 
 ### Install Typ
 
-- Download the Typ executable: {{ download_typ_button }}
+- First, click this button to download Typ: {{ download_typ_button }}
 - Unzip the folder and place it somewhere accessible on your machine (e.g `C:\Programs\Typ`)
 - Navigate to the folder from a command line
 - Run `typ` to check it works
@@ -23,5 +23,7 @@ Typ depends on a command line application called PDFtk Server.
 
 Download and install [PDFtk Server](https://www.pdflabs.com/tools/pdftk-server/) following the instructions on their website. Ensure it's available on your `PATH`, which can be tested after installation by running `pdftk` from the command line.
 
-Think this is annoying? PDFtk Server requires a paid license for redistribution. If you'd like to help improve Typ by sponsoring the redistribution license see [Contact](./contact.md).
+If you don't want to add PDFtk Server to your `PATH`, you can use the [`pdfTkPath` Configuration option](./configuration.md).
+
+Think this is annoying? PDFtk Server requires a paid license for redistribution. If you'd like to help improve Typ by sponsoring the redistribution license see [Contact](..\contact.md).
 

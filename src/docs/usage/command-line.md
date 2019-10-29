@@ -1,7 +1,7 @@
 # Command line
 
-First, ensure you have set up a Project correctly. See [Projects](./projects.md).
+Typ is accessed via a command line interface. You can use it with the Windows Command Prompt, PowerShell, bash, and so on.
 
-In a command line terminal, navigate to your Project directory and run `typ typeset`.
+There is currently only one command, `typeset`.
 
-Typ will use the files in the Project directory to create a book. The PDF for the book will be placed in the Project directory.
+Running `typ typeset` from a command line in a Project directory will cause Typ will use the files to create a book.
