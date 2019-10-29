@@ -166,6 +166,7 @@
         <li class="first-level active"><a href="#getting-started">Getting started</a></li>
             <li class="second-level"><a href="#your-first-book">Your first book</a></li>
                 
+                <li class="third-level"><a href="#add-cover-images">Add cover images</a></li>
                 <li class="third-level"><a href="#further-reading">Further reading</a></li>
     </ul>
 </div></div>
@@ -196,25 +197,31 @@ Alice was beginning to get very tired of sitting by her sister on the bank, and 
 *All rights reserved*
 </code></pre>
 
-<p>See <a href="./usage/Projects.md">Projects</a> for more information.</p>
-<p>Finally, configure your Project. Open <code>config.json</code> and paste in the following:</p>
+<p>Next, configure your Project. Open <code>config.json</code> and paste in the following:</p>
 <pre><code class="json">{
   &quot;title&quot;: &quot;Alice in Wonderland&quot;,
   &quot;fontFamily&quot;: &quot;Arial&quot;,
   &quot;pageSize&quot;: &quot;A5&quot;,
   &quot;pageMargin&quot;: &quot;70pt 60pt 70pt&quot;,
   &quot;textLineHeight&quot;: &quot;200%&quot;,
-  &quot;fontSize&quot;: &quot;24pt&quot;,
-  &quot;generateTableOfContents&quot;: true,
-  &quot;pdfTkPath&quot;: &quot;C:\\Programs\\bin\\pdftk.exe&quot;
+  &quot;fontSize&quot;: &quot;12pt&quot;,
+  &quot;generateTableOfContents&quot;: true 
 }
 </code></pre>
 
-<p>Finally, run Typ from the command line. Open a command line terminal and run <code>typ typeset</code>. Your ready-to-print PDF will be created and placed in the Project directory. See <a href="../usage/command-line/">Command Line</a> for more information.</p>
+<p>Now it's time to run Typ. Open a command line terminal and navigate to your Project folder. </p>
+<p>Run <code>typ typeset</code> from the command line.</p>
+<p>Your ready-to-print PDF will be created and placed in the Project directory. See <a href="../usage/command-line/">Command Line</a> for more information.</p>
+<h3 id="add-cover-images">Add cover images</h3>
+<p>Typ supports front and back cover images.</p>
+<p>Download the two sample images <a href="../front-cover.png"><code>front-cover.png</code></a> and <a href="../back-cover.png"><code>back-cover.png</code></a>.</p>
+<p>Place these two files in your Project folder.</p>
+<p>Run <code>typ typeset</code> again. Typ will automatically pick up the cover images and add them to your book.</p>
 <p>That's it! You're now ready to begin creating books.</p>
 <h3 id="further-reading">Further reading</h3>
 <p>To do more with Typ, you'll want to read these pages:</p>
 <ul>
+<li><a href="../usage/projects/">Projects</a></li>
 <li><a href="../usage/configuration/">Configuration</a></li>
 <li><a href="../usage/writing-markdown/">Writing Markdown</a></li>
 </ul></div>
@@ -228,6 +235,7 @@ Alice was beginning to get very tired of sitting by her sister on the bank, and 
 <p>
       <small>© Mikiel Agutu 2019<br></small>
 
+<small><a href="https://github.com/MikielAgutu/typ-site">Edit this website on GitHub</a></small><br />
 <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a></small>
 
 </p>

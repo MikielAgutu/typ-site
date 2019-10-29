@@ -175,7 +175,7 @@
 
 <h1 id="configuration">Configuration</h1>
 <p>Typ is configured through a single JSON file, <code>config.json</code>.</p>
-<p>The configuration file must be present in a Typ project. See <a href="../projects/">Projects</a> for more information Project files.</p>
+<p>The configuration file must be present in a Typ project. See <a href="../projects/">Projects</a> for more information about Project files.</p>
 <h2 id="configuration-reference">Configuration reference</h2>
 <h3 id="general-options">General options</h3>
 <table>
@@ -198,8 +198,8 @@
 <td><code>true</code></td>
 </tr>
 <tr>
-<td><code>pdfTkPath</code></td>
-<td>Path to the PDFtk executable. See <a href="../installation/"><code>installation</code></a>.</td>
+<td><code>pdfTkPath</code> (optional)</td>
+<td>Path to the PDFtk Server executable. See <a href="../installation/">Installation</a>.</td>
 <td><code>C:\\Programs\\bin\\pdftk.exe</code></td>
 </tr>
 </tbody>
@@ -207,6 +207,7 @@
 <h3 id="formatting-options">Formatting options</h3>
 <p>These options control what the formatting of the book looks like.</p>
 <p>These options generally have an equivalent CSS property. For instance, <code>textLineHeight</code> maps to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/line-height"><code>line-height</code></a>, so could be set to <code>normal</code>, <code>2.5</code>, <code>3em</code>, and so on.</p>
+<p>The links under the 'CSS' heading for each option have more information about valid values.</p>
 <table>
 <thead>
 <tr>
@@ -237,9 +238,9 @@
 </tr>
 <tr>
 <td><code>fontFamily</code></td>
-<td>Font for all text content</td>
+<td>Font for all text content. Currently supported fonts: <code>georgia</code>, <code>times new roman</code>, <code>arial</code> &amp; <code>verdana</code></td>
 <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family"><code>font-family</code></a></td>
-<td><code>system-ui</code></td>
+<td><code>verdana</code></td>
 </tr>
 <tr>
 <td><code>fontSize</code></td>
@@ -256,7 +257,7 @@
   &quot;pageSize&quot;: &quot;A5&quot;,
   &quot;pageMargin&quot;: &quot;70pt 60pt 70pt&quot;,
   &quot;textLineHeight&quot;: &quot;200%&quot;,
-  &quot;fontSize&quot;: &quot;24pt&quot;,
+  &quot;fontSize&quot;: &quot;12pt&quot;,
   &quot;generateTableOfContents&quot;: true,
   &quot;pdfTkPath&quot;: &quot;C:\\Programs\\bin\\pdftk.exe&quot;
 }
@@ -271,6 +272,7 @@
 <p>
       <small>© Mikiel Agutu 2019<br></small>
 
+<small><a href="https://github.com/MikielAgutu/typ-site">Edit this website on GitHub</a></small><br />
 <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a></small>
 
 </p>
