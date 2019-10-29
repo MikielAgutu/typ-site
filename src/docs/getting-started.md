@@ -33,7 +33,7 @@ Joe Bloggs
 *All rights reserved*
 ```
 
-Finally, configure your Project. Open `config.json` and paste in the following:
+Next, configure your Project. Open `config.json` and paste in the following:
 
 ```json
 {
@@ -46,7 +46,8 @@ Finally, configure your Project. Open `config.json` and paste in the following:
   "generateTableOfContents": true 
 }
 ```
-Finally, it's time to run Typ. Open a command line terminal and navigate to your Project folder. 
+
+Now it's time to run Typ. Open a command line terminal and navigate to your Project folder. 
 
 Run `typ typeset` from the command line.
 
