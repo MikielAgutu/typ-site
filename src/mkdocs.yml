@@ -2,6 +2,7 @@ site_name: Typ
 theme:
   name: cinder
   custom_dir: cinder-theme-ext
+site_favicon: favicon.ico
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
