@@ -19,7 +19,7 @@ site_dir: ../docs
 extra:
   current_release_version: 0.0.1
   download_typ_button: <a href="https://typ-releases.s3.eu-west-2.amazonaws.com/v0/typ.zip"><button>Download Typ</button></a>
-
+google_analytics: ['UA-129790883-2', 'typ-set.com']
 plugins:
   - markdownextradata: {}
 
