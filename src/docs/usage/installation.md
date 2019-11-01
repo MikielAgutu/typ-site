@@ -6,7 +6,7 @@ Follow these steps to download and install Typ.
 
 ### Install Typ
 
-- First, click this button to download Typ: {{ download_typ_button }}
+- First, click this button to download Typ: {{ download_typ_latest_button }}
 - Unzip the folder and place it somewhere accessible on your machine (e.g `C:\Programs\Typ`)
 - Navigate to the folder from a command line
 - Run `typ` to check it works
