@@ -23,7 +23,7 @@ extra:
   r_0_0_2: https://typ-releases.s3.eu-west-2.amazonaws.com/v0/typ-0-0-2-win-x64.zip
   r_0_0_1: https://typ-releases.s3.eu-west-2.amazonaws.com/v0/typ-0-0-1-win-x64.zip
 
-google_analytics: ['UA-129790883-2', 'typ-set.com']
+google_analytics: ['UA-151371280-1', 'typ-set.com']
 plugins:
   - markdownextradata: {}
 
