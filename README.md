@@ -17,3 +17,7 @@ If you have comments about the website, you can also submit an issue or create a
 ## Debugging
 
 To debug the site locally, see [Debugging](./Debugging.md).
+
+## License
+
+The website repository is under the Apache License 2.0 license. See [License](./License.txt).
