@@ -22,6 +22,6 @@ If you're already familiar with Typ, you can download and install it from the [I
 
 ## Comments? Questions?
 
-Typ is still in an early stage of development. Be sure to keep checking this page for the latest news.
+Typ is still in an early stage of development. For the latest news, follow Typ on Twitter [@typ_set](https://twitter.com/typ_set).
 
-You can view the entire source code for this site on it's [GitHub page](https://github.com/MikielAgutu/typ-site). Feel free to open a Pull Request to make your own contribution. Alternatively, if you have any feature requests or bug reports, then open an issue.
+You can view the entire source code for this site on it's [GitHub page](https://github.com/MikielAgutu/typ-site). If you have a bug report, feature request, or question, feel free to open a GitHub issue. Pull Requests are also welcome if you'd like to contribute your own changes.

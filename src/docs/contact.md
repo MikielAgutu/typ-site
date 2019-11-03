@@ -1,5 +1,6 @@
 # Contact
 
-You can contact me at typ.hello@gmail.com
+- Email: typ.hello@gmail.com
+- Twitter: [@typ_set](https://twitter.com/typ_set)
 
-If you have a bug report, or feature request, file an issue on the [GitHub page for this site](https://github.com/MikielAgutu/typ-site).
+For bug reports, or feature requests, or questions, feel free to open an issue on the [GitHub page for this site](https://github.com/MikielAgutu/typ-site).
