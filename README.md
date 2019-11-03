@@ -1,26 +1,19 @@
-# Typ website
+# Typ
 
-Website for Typ. Built using [MkDocs](https://www.mkdocs.org/). Uses the [Cinder](https://sourcefoundry.org/cinder/) community theme.
+![logo](img/logo.png)
 
-## Folders
+Typ is a simple typesetting application. Turn plain Markdown into a formatted PDF ready for print.
 
-- `src` -> Source code for the site
-- `docs` -> Where the built site goes for hosting on GitHub pages
+Focus on content, not formatting.
 
-## Pre-requisites
+This repository contains the source code for the Typ website.
 
-- Python 2.7+
-- `pip` (Python package manager)
-- `pip install mkdocs`
-- `pip install mkdocs-cinder`
-- `pip install mkdocs-markdownextradata-plugin`
+## Join the discussion
 
-## Development server
+Submit an issue to report bugs, request features, or ask questions about Typ.
 
-- `cd src`
-- `mkdocs serve`
+If you have comments about the website, you can also submit an issue or create a Pull Request.
 
-## Building
+## Debugging
 
-- `cd src`
-- `mkdocs build`
+To debug the site locally, see [Debugging](./Debugging.md).
