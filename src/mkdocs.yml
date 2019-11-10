@@ -18,8 +18,9 @@ nav:
 site_dir: ../docs
 extra:
   current_release_version: 0.0.2
-  download_typ_latest_button: <a href="https://typ-releases.s3.eu-west-2.amazonaws.com/v0/typ-0-0-2-win-x64.zip"><button>Download Typ</button></a>
+  download_typ_latest_button: <a href="https://typ-releases.s3.eu-west-2.amazonaws.com/v0/typ-0-0-3-win-x64.zip"><button>Download Typ</button></a>
   
+  r_0_0_3: https://typ-releases.s3.eu-west-2.amazonaws.com/v0/typ-0-0-3-win-x64.zip
   r_0_0_2: https://typ-releases.s3.eu-west-2.amazonaws.com/v0/typ-0-0-2-win-x64.zip
   r_0_0_1: https://typ-releases.s3.eu-west-2.amazonaws.com/v0/typ-0-0-1-win-x64.zip
 
