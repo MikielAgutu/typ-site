@@ -17,7 +17,7 @@ nav:
   - Contact: contact.md
 site_dir: ../docs
 extra:
-  current_release_version: 0.0.2
+  current_release_version: 0.0.3
   download_typ_latest_button: <a href="https://typ-releases.s3.eu-west-2.amazonaws.com/v0/typ-0-0-3-win-x64.zip"><button>Download Typ</button></a>
   
   r_0_0_3: https://typ-releases.s3.eu-west-2.amazonaws.com/v0/typ-0-0-3-win-x64.zip
