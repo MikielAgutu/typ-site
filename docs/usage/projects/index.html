@@ -160,6 +160,11 @@
                 </ul>
 
             <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
                     <li >
                         <a rel="prev" href="../installation/">
                             <i class="fas fa-arrow-left"></i> Previous
@@ -183,25 +188,35 @@
         <li class="first-level active"><a href="#projects">Projects</a></li>
             <li class="second-level"><a href="#creating-a-project">Creating a Project</a></li>
                 
-            <li class="second-level"><a href="#project-file-reference">Project file reference</a></li>
+                <li class="third-level"><a href="#reserved-file-names">Reserved file names</a></li>
+            <li class="second-level"><a href="#projects-and-the-command-line">Projects and the command line</a></li>
+                
+            <li class="second-level"><a href="#reserved-project-file-name-reference">Reserved Project file name reference</a></li>
                 
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
 <h1 id="projects">Projects</h1>
-<p>Typ expects a certain set of files to exist in order for it to work. Together, these files are called a 'Project'.</p>
-<p>This page explains how to configure a Project.</p>
+<p>For a work that consists of multiple files (front cover, multiple chapter files, preamble, etc), these should be stored in a single folder, termed a Project.</p>
+<p>A Project is just a normal folder on your file system that contains files that Typ can work with.</p>
+<p>Typ will consider the working directory to be a Project folder. Therefore, it's best to use a single folder for the exclusive use of Typ if you plan to use multiple files.</p>
 <h2 id="creating-a-project">Creating a Project</h2>
+<p>Create a new folder somewhere on the file system. This will be the Project folder.</p>
+<p>Add Markdown files for the content of your document. Ensure each file has a <code>.md</code> file extension.</p>
+<h3 id="reserved-file-names">Reserved file names</h3>
+<p>There are certain file names that have special meanings in Typ. If present in your Project, Typ will automatically pick them up and use them.</p>
+<p>For instance, to add a cover image to your document, just add a file called <code>front-cover.png</code> to your Project.</p>
+<p>See the Project file reference at the end of this page for details.</p>
+<h2 id="projects-and-the-command-line">Projects and the command line</h2>
+<p>When you run <code>typ typset</code> in a Project, Typ will do the following:</p>
 <ul>
-<li>Create a new directory for your Project somewhere on disk<ul>
-<li>It's recommended that Typ Project files have their own exclusive directory</li>
+<li>Find all the files that end in the <code>.md</code> extension</li>
+<li>Combine the files in alphabetical order</li>
+<li>Pick up any files with reserved file names</li>
+<li>Create the PDF</li>
 </ul>
-</li>
-<li>Inside the Project directory, create files that match the file names and formats listed on this page</li>
-<li>Note that the file names should exactly match the documentation</li>
-</ul>
-<h2 id="project-file-reference">Project file reference</h2>
+<h2 id="reserved-project-file-name-reference">Reserved Project file name reference</h2>
 <p>This table explains the purpose of each Project file. </p>
 <table>
 <thead>
@@ -213,28 +228,28 @@
 </thead>
 <tbody>
 <tr>
-<td><code>text.md</code></td>
-<td>The content of the book</td>
+<td><code>*.md</code></td>
+<td>The content of the document</td>
 <td>false</td>
 </tr>
 <tr>
-<td><code>config.json</code></td>
-<td>Configuration for how the book should be produced. See <a href="../configuration/">Configuration</a> for details about each configuration option.</td>
-<td>false</td>
+<td><code>config.yaml</code></td>
+<td>Configuration for how the document should be produced. See <a href="../configuration/">Configuration</a> for details about each configuration option.</td>
+<td>true</td>
 </tr>
 <tr>
 <td><code>preamble.md</code></td>
-<td>The information displayed after the front cover. Could contain copyright details, author information, etc.</td>
+<td>The first content page. Could contain copyright details, author information, etc.</td>
 <td>true</td>
 </tr>
 <tr>
 <td><code>front-cover.png</code></td>
-<td>The front cover image of your book</td>
+<td>The front cover image of your document</td>
 <td>true</td>
 </tr>
 <tr>
 <td><code>back-cover.png</code></td>
-<td>The back cover image of your book</td>
+<td>The back cover image of your document</td>
 <td>true</td>
 </tr>
 </tbody>
@@ -263,8 +278,32 @@
     <script>var base_url = "../.."</script>
     
     <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
 
-    <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

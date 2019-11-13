@@ -2,6 +2,19 @@
 
 Typ is accessed via a command line interface. You can use it with the Windows Command Prompt, PowerShell, bash, and so on.
 
-There is currently only one command, `typeset`.
+General usage is `typ [command] [arguments]`.
 
-Running `typ typeset` from a command line in a Project directory will cause Typ will use the files to create a book.
+There is currently only one command, `typeset`
+
+## Command line arguments reference
+
+| Argument | Alias | Effect |
+| --- | --- | --- |
+| `--inputFilepaths` | `-i` | List of Markdown files to use to create a formatted PDF. |
+| `--outputFilepaths` | `-o` | Output file path. |
+
+Note that if `--inputFilepaths` is not specified, `typeset` will look for files in the working directory. This behavior is explained in more detail in [Projects](./projects.md).
+
+### Example usage
+
+`typ typeset -i text.md post-script.md -o myDoc.pdf`

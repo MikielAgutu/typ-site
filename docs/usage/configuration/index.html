@@ -160,6 +160,11 @@
                 </ul>
 
             <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
                     <li >
                         <a rel="prev" href="../projects/">
                             <i class="fas fa-arrow-left"></i> Previous
@@ -185,13 +190,13 @@
                 
                 <li class="third-level"><a href="#general-options">General options</a></li>
                 <li class="third-level"><a href="#formatting-options">Formatting options</a></li>
-                <li class="third-level"><a href="#example-configjson">Example config.json</a></li>
+                <li class="third-level"><a href="#example-configyaml">Example config.yaml</a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
 <h1 id="configuration">Configuration</h1>
-<p>Typ is configured through a single JSON file, <code>config.json</code>.</p>
+<p>Typ is configured through a single YAML file, <code>config.yaml</code>.</p>
 <p>The configuration file must be present in a Typ project. See <a href="../projects/">Projects</a> for more information about Project files.</p>
 <h2 id="configuration-reference">Configuration reference</h2>
 <h3 id="general-options">General options</h3>
@@ -206,23 +211,33 @@
 <tbody>
 <tr>
 <td><code>title</code></td>
-<td>The title of the book</td>
+<td>The title of the document</td>
 <td><code>Alice in Wonderland</code></td>
 </tr>
 <tr>
 <td><code>generateTableOfContents</code></td>
 <td>Whether to generate a table of contents based on headings</td>
-<td><code>true</code></td>
+<td><code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>printPageNumbers</code></td>
+<td>Whether to print page numbers</td>
+<td><code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>printTitleMarginals</code></td>
+<td>Whether to print the chapter title in a top corner, and the document title in the bottom corner</td>
+<td><code>true</code> or <code>false</code></td>
 </tr>
 <tr>
 <td><code>pdfTkPath</code> (optional)</td>
 <td>Path to the PDFtk Server executable. See <a href="../installation/">Installation</a>.</td>
-<td><code>C:\\Programs\\bin\\pdftk.exe</code></td>
+<td><code>C:\Programs\bin\pdftk.exe</code></td>
 </tr>
 </tbody>
 </table>
 <h3 id="formatting-options">Formatting options</h3>
-<p>These options control what the formatting of the book looks like.</p>
+<p>These options control what the formatting of the document looks like.</p>
 <p>These options generally have an equivalent CSS property. For instance, <code>textLineHeight</code> maps to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/line-height"><code>line-height</code></a>, so could be set to <code>normal</code>, <code>2.5</code>, <code>3em</code>, and so on.</p>
 <p>The links under the 'CSS' heading for each option have more information about valid values.</p>
 <table>
@@ -259,25 +274,19 @@
 <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family"><code>font-family</code></a></td>
 <td><code>verdana</code></td>
 </tr>
-<tr>
-<td><code>fontSize</code></td>
-<td>Font size for main content</td>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size"><code>font-size</code></a></td>
-<td><code>2em</code></td>
-</tr>
 </tbody>
 </table>
-<h3 id="example-configjson">Example <code>config.json</code></h3>
-<pre><code class="json">{
-  &quot;title&quot;: &quot;Alice in Wonderland&quot;,
-  &quot;fontFamily&quot;: &quot;Arial&quot;,
-  &quot;pageSize&quot;: &quot;A5&quot;,
-  &quot;pageMargin&quot;: &quot;70pt 60pt 70pt&quot;,
-  &quot;textLineHeight&quot;: &quot;200%&quot;,
-  &quot;fontSize&quot;: &quot;12pt&quot;,
-  &quot;generateTableOfContents&quot;: true,
-  &quot;pdfTkPath&quot;: &quot;C:\\Programs\\bin\\pdftk.exe&quot;
-}
+<h3 id="example-configyaml">Example <code>config.yaml</code></h3>
+<pre><code class="yaml">title: My document
+fontFamily: Arial
+pageSize: A5
+pageMargin: 70pt 60pt 70pt
+textLineHeight: 200%
+fontSize: 12pt
+generateTableOfContents: false
+printPageNumbers: false
+printTitleMarginals: false
+pdfTkPath: C:\Programs\bin\pdftk.exe
 </code></pre></div>
         
         
@@ -303,8 +312,32 @@
     <script>var base_url = "../.."</script>
     
     <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
 
-    <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

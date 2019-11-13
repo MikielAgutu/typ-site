@@ -17,15 +17,17 @@ nav:
   - Contact: contact.md
 site_dir: ../docs
 extra:
-  current_release_version: 0.0.3
-  download_typ_latest_button: <a href="https://link.www.typ-set.com/BchghT"><button>Download Typ</button></a>
+  current_release_version: 0.0.4
+  download_typ_latest_button: <a href="https://link.www.typ-set.com/S17sGH"><button>Download Typ</button></a>
   
+  r_0_0_4: https://link.www.typ-set.com/S17sGH
   r_0_0_3: https://link.www.typ-set.com/BchghT
   r_0_0_2: https://link.www.typ-set.com/9uhL0q
   r_0_0_1: https://link.www.typ-set.com/fWknq4
 
 google_analytics: ['UA-151371280-1', 'typ-set.com']
 plugins:
+  - search
   - markdownextradata: {}
 
 copyright: © Mikiel Agutu 2019

@@ -160,6 +160,11 @@
                 </ul>
 
             <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
                     <li >
                         <a rel="prev" href="../about/">
                             <i class="fas fa-arrow-left"></i> Previous
@@ -186,10 +191,8 @@
         <div class="col-md-9" role="main">
 
 <h1 id="contact">Contact</h1>
-<ul>
-<li>Email: typ.hello@gmail.com</li>
-<li>Twitter: <a href="https://twitter.com/typ_set">@typ_set</a></li>
-</ul>
+<p>Typ is still in an early stage of development. For the latest news, follow Typ on Twitter <a href="https://twitter.com/typ_set">@typ_set</a>.</p>
+<p>You can email the developer of Typ at <a href="mailto:typ.hello@gmail.com">typ.hello@gmail.com</a>.</p>
 <p>For bug reports, or feature requests, or questions, feel free to open an issue on the <a href="https://github.com/MikielAgutu/typ-site">GitHub page for this site</a>.</p></div>
         
         
@@ -215,8 +218,32 @@
     <script>var base_url = ".."</script>
     
     <script src="../js/base.js"></script>
+    <script src="../search/main.js"></script>
 
-    <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

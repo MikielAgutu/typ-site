@@ -160,6 +160,11 @@
                 </ul>
 
             <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
                     <li >
                         <a rel="prev" href="../command-line/">
                             <i class="fas fa-arrow-left"></i> Previous
@@ -181,17 +186,129 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="first-level active"><a href="#writing-markdown">Writing Markdown</a></li>
+            <li class="second-level"><a href="#syntax-highlighting">Syntax highlighting</a></li>
+                
+                <li class="third-level"><a href="#syntax-highlighting-markdown-code-reference">Syntax highlighting Markdown code reference</a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
 <h1 id="writing-markdown">Writing Markdown</h1>
-<p>Typ's philosophy is simple: when writing a book one must focus on content, not formatting.</p>
-<p>Typ allows you to write your book's content in a simple, lightweight text format called Markdown.</p>
-<p>When it comes to creating a print ready PDF, Typ allows you to configure the important parts of your book's appearance, like font style and page size.</p>
-<p>Typ will combine your configuration with it's own sensible formatting style to produce the PDF.</p>
-<p>Think of it like telling a professional typesetter roughly how you want it to look, and they go away and use their judgment to produce the actual document.</p>
-<p>You can learn more about how to write Markdown on <a href="https://www.markdownguide.org/">Markdown Guide</a>.</p></div>
+<p>When writing a document you want to spend most of your time on content, not formatting.</p>
+<p>Typ allows you to write your document's content in a simple, lightweight text format called Markdown. </p>
+<p>With Typ, you can specify the important parts of your document's appearance, like font style and page size. Typ will combine your configuration with it's own sensible formatting style to produce a PDF.</p>
+<p>You can learn more about how to write Markdown on <a href="https://www.markdownguide.org/">Markdown Guide</a>.</p>
+<h2 id="syntax-highlighting">Syntax highlighting</h2>
+<p>Typ supports syntax highlighting for Markdown code blocks.</p>
+<p>In order to turn on syntax highlighting for a code block, you need to supply a language code.</p>
+<p>For instance, for a C# code block:</p>
+<pre><code> ```c#
+ int x = 0;
+ x++;
+ Console.WriteLine(x);
+ ```
+</code></pre>
+
+<h3 id="syntax-highlighting-markdown-code-reference">Syntax highlighting Markdown code reference</h3>
+<p>A table of supported languages and their codes is listed here.</p>
+<table>
+<thead>
+<tr>
+<th>Language</th>
+<th>Markdown code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ASPX</td>
+<td><code>aspx</code></td>
+</tr>
+<tr>
+<td>C</td>
+<td><code>c</code></td>
+</tr>
+<tr>
+<td>C++</td>
+<td><code>c++</code></td>
+</tr>
+<tr>
+<td>C#</td>
+<td><code>c#</code></td>
+</tr>
+<tr>
+<td>COBOL</td>
+<td><code>cobol</code></td>
+</tr>
+<tr>
+<td>Eiffel</td>
+<td><code>eiffel</code></td>
+</tr>
+<tr>
+<td>FORTRAN</td>
+<td><code>fortran</code></td>
+</tr>
+<tr>
+<td>Haskell</td>
+<td><code>haskell</code></td>
+</tr>
+<tr>
+<td>HTML</td>
+<td><code>html</code></td>
+</tr>
+<tr>
+<td>Java</td>
+<td><code>java</code></td>
+</tr>
+<tr>
+<td>JavaScript</td>
+<td><code>javascript</code></td>
+</tr>
+<tr>
+<td>Mercury</td>
+<td><code>mercury</code></td>
+</tr>
+<tr>
+<td>Pascal</td>
+<td><code>pascal</code></td>
+</tr>
+<tr>
+<td>Perl</td>
+<td><code>perl</code></td>
+</tr>
+<tr>
+<td>PHP</td>
+<td><code>php</code></td>
+</tr>
+<tr>
+<td>Python</td>
+<td><code>python</code></td>
+</tr>
+<tr>
+<td>Ruby</td>
+<td><code>ruby</code></td>
+</tr>
+<tr>
+<td>SQL</td>
+<td><code>sql</code></td>
+</tr>
+<tr>
+<td>Visual Basic</td>
+<td><code>visual basic</code></td>
+</tr>
+<tr>
+<td>VB Script</td>
+<td><code>vbscript</code></td>
+</tr>
+<tr>
+<td>VB.NET</td>
+<td><code>vb.net</code></td>
+</tr>
+<tr>
+<td>XML</td>
+<td><code>xml</code></td>
+</tr>
+</tbody>
+</table></div>
         
         
     </div>
@@ -216,8 +333,32 @@
     <script>var base_url = "../.."</script>
     
     <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
 
-    <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

@@ -160,6 +160,11 @@
                 </ul>
 
             <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
                     <li class="disabled">
                         <a rel="prev" >
                             <i class="fas fa-arrow-left"></i> Previous
@@ -189,20 +194,21 @@
         <div class="col-md-9" role="main">
 
 <p><img alt="logo" src="logo.png" /></p>
-<p>Typ is a simple typesetting application. Turn plain Markdown into a formatted PDF ready for print.</p>
+<p>Typ is a simple typesetting application. Turn plain Markdown into a formatted PDF, ready for print.</p>
 <p>Focus on content, not formatting.</p>
 <h2 id="features">Features</h2>
 <ul>
-<li>Create entire books in <a href="https://www.markdownguide.org/">Markdown</a></li>
-<li>Simple command line interface</li>
-<li>Easily configure page dimensions, fonts, formatting, and so on</li>
+<li>Write content <a href="usage/writing-markdown/">Markdown</a></li>
+<li>Syntax highlighting</li>
+<li>Command line interface</li>
+<li>Configure page dimensions, fonts, formatting, and so on</li>
 <li>Produce PDFs usable by print on demand services</li>
 <li>Cross platform (Soon...)</li>
 </ul>
 <h2 id="get-started">Get started</h2>
 <p>New to Typ? See <a href="getting-started/">Getting Started</a>.</p>
 <h2 id="download-and-install">Download and install</h2>
-<p>If you're already familiar with Typ, you can download and install it from the <a href="usage/installation/">Installation</a> page.</p>
+<p>See the <a href="usage/installation/">Installation</a> page.</p>
 <h2 id="comments-questions">Comments? Questions?</h2>
 <p>Typ is still in an early stage of development. For the latest news, follow Typ on Twitter <a href="https://twitter.com/typ_set">@typ_set</a>.</p>
 <p>You can view the entire source code for this site on it's <a href="https://github.com/MikielAgutu/typ-site">GitHub page</a>. If you have a bug report, feature request, or question, feel free to open a GitHub issue. Pull Requests are also welcome if you'd like to contribute your own changes.</p></div>
@@ -230,8 +236,32 @@
     <script>var base_url = "."</script>
     
     <script src="js/base.js"></script>
+    <script src="search/main.js"></script>
 
-    <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -277,5 +307,5 @@
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-11-10 22:56:33
+Build Date UTC : 2019-11-18 21:36:10
 -->

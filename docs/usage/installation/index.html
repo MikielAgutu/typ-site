@@ -160,6 +160,11 @@
                 </ul>
 
             <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
                     <li >
                         <a rel="prev" href="../../getting-started/">
                             <i class="fas fa-arrow-left"></i> Previous
@@ -183,8 +188,9 @@
         <li class="first-level active"><a href="#installation">Installation</a></li>
             <li class="second-level"><a href="#install-typ">Install Typ</a></li>
                 
-            <li class="second-level"><a href="#install-pdftk-server">Install PDFtk Server</a></li>
+            <li class="second-level"><a href="#install-pdftk-server-optional">Install PDFtk Server (Optional)</a></li>
                 
+                <li class="third-level"><a href="#instructions">Instructions</a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
@@ -192,23 +198,25 @@
 <h1 id="installation">Installation</h1>
 <p><em>Typ is currently only available for machines running 64 bit Windows. Other platforms are coming soon.</em></p>
 <p>Follow these steps to download and install Typ.</p>
-<h3 id="install-typ">Install Typ</h3>
+<h2 id="install-typ">Install Typ</h2>
 <ul>
-<li>First, click this button to download Typ: <a href="https://link.www.typ-set.com/BchghT"><button>Download Typ</button></a></li>
+<li>Click this button to download Typ: <a href="https://link.www.typ-set.com/S17sGH"><button>Download Typ</button></a></li>
 <li>Unzip the folder and place it somewhere accessible on your machine (e.g <code>C:\Programs\Typ</code>)</li>
-<li>Navigate to the folder from a command line</li>
+<li>Navigate to the installation folder from a command line terminal</li>
 <li>Run <code>typ</code> to check it works</li>
 </ul>
 <p>To run Typ from anywhere on your machine, you must add it to your <code>PATH</code> environment variable.</p>
 <ul>
 <li>Amend your <code>PATH</code> environment variable to point to the directory containing <code>typ.exe</code><ul>
-<li>For instance, <code>typ.exe</code> lives in <code>C:\Programs\Typ\typ.exe</code>, add <code>C:\Programs\Typ</code> to <code>PATH</code></li>
+<li>For instance, if <code>typ.exe</code> lives in <code>C:\Programs\Typ\typ.exe</code>, add <code>C:\Programs\Typ</code> to <code>PATH</code></li>
 </ul>
 </li>
-<li>Run <code>typ</code> from a command line to check it works</li>
+<li>Run <code>typ</code> from a command line terminal to check it works</li>
 </ul>
-<h3 id="install-pdftk-server">Install PDFtk Server</h3>
-<p>Typ depends on a command line application called PDFtk Server.</p>
+<h2 id="install-pdftk-server-optional">Install PDFtk Server (Optional)</h2>
+<p>Some features of Typ depend on a command line application called <a href="https://www.pdflabs.com/tools/pdftk-server/">PDFtk Server</a>.</p>
+<p>Only follow this step if you know you want to use a feature that depends on PDFtk Server.</p>
+<h3 id="instructions">Instructions</h3>
 <p>Download and install <a href="https://www.pdflabs.com/tools/pdftk-server/">PDFtk Server</a> following the instructions on their website. Ensure it's available on your <code>PATH</code>, which can be tested after installation by running <code>pdftk</code> from the command line.</p>
 <p>If you don't want to add PDFtk Server to your <code>PATH</code>, you can use the <a href="../configuration/"><code>pdfTkPath</code> Configuration option</a>.</p>
 <p>Think this is annoying? PDFtk Server requires a paid license for redistribution. If you'd like to help improve Typ by sponsoring the redistribution license see <a href="../../contact/">Contact</a>.</p></div>
@@ -236,8 +244,32 @@
     <script>var base_url = "../.."</script>
     
     <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
 
-    <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

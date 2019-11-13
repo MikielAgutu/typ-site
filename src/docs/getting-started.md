@@ -1,74 +1,134 @@
 # Getting started
 
-Typ is a simple typesetting application.
+Typ turns plain Markdown into a formatted PDF, ready for print. It is accessed through a command line interface.
 
-It allows you to turn plain Markdown into a formatted PDF ready for print. It is accessed through a command line interface.
-
-## Your first book
+## Your first document
 
 First install Typ. See [Installation](./usage/installation.md).
 
-Next, you need to create a Project. This is where your book's files will live.
+Open a command line terminal. If Typ is not on your `PATH`, navigate to the installation folder from the terminal.
 
-Create a new folder on your machine. Inside the folder create the following files:
+Create a file called `text.md`.
 
-- `text.md`
-- `preamble.md`
-- `config.json`
-
-Open `text.md` and write something. If you need inspiration, copy this:
+Open `text.md` and write something in Markdown. If you need inspiration, copy this:
 
 ```markdown
-# Chapter 1 - Down the Rabbit Hole
-Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, ‘and what is the use of a book,’ thought Alice ‘without pictures or conversations?’
+# Types, variables, and values
+
+C# is a strongly-typed language. Every variable and constant has a type, as does every expression that evaluates to a value. Every method signature specifies a type for each input parameter and for the return value.
+
+Here's an example of some C# code:
+
+ ```c#
+int a = 5;
+int b = a + 2; //OK
+
+bool test = true;
+
+// Error. Operator '+' cannot be applied to operands of type 'int' and 'bool'.
+int c = a + test;
+ ```
+
+Try and run it in your favorite IDE.
 ```
 
-Open `preamble.md` and write your name and the current date. Something like this:
+Run `typ typeset --inputFilepaths text.md`.
+
+Using `text.md`, Typ will then create a formatted PDF called `output.pdf`.
+
+### Changing the output file
+
+You can use the `--outputFilepath` argument to change the output file name and location.
+
+Run `typ typeset --inputFilepaths text.md --outputFilepath myDoc.pdf`
+
+Typ will now produce a file called `myDoc.pdf` instead of `output.pdf`.
+
+### Aliases
+
+All command line arguments have short-hand aliases.
+
+`--inputFilepaths` is aliased by `-i`. `--outputFilepath` is aliased by `-o`.
+
+Run `typ typeset -i text.md -o myDoc.pdf` to see the aliases in action.
+
+### Multiple files
+
+Typ can use multiple Markdown files to create a PDF.
+
+Files are combined in the order specified by the `--inputFilepaths` (`-i`) command line argument.
+
+Create a new file, `post-script.md` and add the contents:
 
 ```markdown
-Joe Bloggs
+# Post script
 
-21/10/2019
-
-*All rights reserved*
+Thanks for reading!
 ```
 
-Next, configure your Project. Open `config.json` and paste in the following:
+Run `typ typeset -i text.md post-script.md -o myDoc.pdf`.
 
-```json
-{
-  "title": "Alice in Wonderland",
-  "fontFamily": "Arial",
-  "pageSize": "A5",
-  "pageMargin": "70pt 60pt 70pt",
-  "textLineHeight": "200%",
-  "fontSize": "12pt",
-  "generateTableOfContents": true 
-}
+`myDoc.pdf` should contain content from `text.md` and `post-script.md`.
+
+### Configure the formatting
+
+Typ gives you control over how your PDF is created through a configuration file.
+
+Create a new file called `config.yaml` and paste in the following:
+
+```yaml
+title: C# docs
+fontFamily: Arial
+pageSize: A5
+pageMargin: 70pt 60pt 70pt
+textLineHeight: 150%
+fontSize: 14pt
+generateTableOfContents: false
+printPageNumbers: false
+printTitleMarginals: false
 ```
 
-Now it's time to run Typ. Open a command line terminal and navigate to your Project folder. 
+Run `typ typeset -i text.md post-script.md -o myDoc.pdf`
 
-Run `typ typeset` from the command line.
+You should see the difference by the way `myDoc.pdf` looks.
 
-Your ready-to-print PDF will be created and placed in the Project directory. See [Command Line](./usage/command-line.md) for more information.
+### Projects
 
-### Add cover images
+For a work that consists of multiple files (front cover, multiple chapter files, preamble, etc), these should be stored in a single folder, termed a Project.
 
-Typ supports front and back cover images.
+A Project is just a normal folder on your file system that contains files that Typ can work with.
 
-Download the two sample images [`front-cover.png`](./front-cover.png) and [`back-cover.png`](./back-cover.png).
+By following this guide, you have created a Project already.
 
-Place these two files in your Project folder.
+Run `typ typeset`. Note the absence of command line arguments.
 
-Run `typ typeset` again. Typ will automatically pick up the cover images and add them to your book.
+Typ will create a PDF, `output.pdf`, with the combined contents of `text.md` and `post-script.md`.
 
-That's it! You're now ready to begin creating books.
+Notice the contents of `post-script.md` now appears before `text.md`.
 
-### Further reading
+In this context, `typ typeset` will look for all the Markdown files in the working directory. The files are sorted in alphabetical order using the file name, and then combined. The combined text is then used to produce a formatted PDF.
 
-To do more with Typ, you'll want to read these pages:
+You'll have to use a naming convention to ensure the files appear in the correct order. For instance, rename `text.md` to `001-text.md`, and `post-script.md` to `002.post-script.md`.
 
+Run `typ typeset` again, and the text will be in the correct order.
+
+### Do more with Typ
+
+Typ has other features, such as:
+
+- Front and back cover images
+- Syntax highlighting for code blocks
+- Advanced formatting configuration
+
+Read these pages to find out more:
+
+- [Writing Markdown](./usage/writing-markdown.md)
+- [Command Line](./usage/command-line.md)
 - [Projects](./usage/projects.md)
 - [Configuration](./usage/configuration.md)
-- [Writing Markdown](./usage/writing-markdown.md)
+
+### Contact
+
+Typ is still in an early stage of development. For the latest news, follow Typ on Twitter [@typ_set](https://twitter.com/typ_set).
+
+You can view the entire source code for this site on it's [GitHub page](https://github.com/MikielAgutu/typ-site). If you have a bug report, feature request, or question, feel free to open a GitHub issue. Pull Requests are also welcome if you'd like to contribute your own changes.
