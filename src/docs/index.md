@@ -6,7 +6,7 @@ Focus on content, not formatting.
 
 ## Features
 
-- Write content [Markdown](usage/writing-markdown.md)
+- Write content in [Markdown](usage/writing-markdown.md)
 - Syntax highlighting
 - Command line interface
 - Configure page dimensions, fonts, formatting, and so on
