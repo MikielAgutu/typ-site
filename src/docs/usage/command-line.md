@@ -1,6 +1,6 @@
 # Command line
 
-Typ is accessed via a command line interface. You can use it with the Windows Command Prompt, PowerShell, bash, and so on.
+Typ is accessed via a command line interface. You can use it with the Windows Command Prompt, PowerShell, and so on. 
 
 General usage is `typ [command] [arguments]`.
 

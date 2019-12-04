@@ -18,7 +18,7 @@ nav:
 site_dir: ../docs
 extra:
   current_release_version: 0.0.4
-  download_typ_latest_button: <a href="https://link.www.typ-set.com/S17sGH"><button>Download Typ</button></a>
+  download_typ_latest_button: <a href="https://link.www.typ-set.com/S17sGH"><button>Download Typ (Windows 64 bit)</button></a>
   
   r_0_0_4: https://link.www.typ-set.com/S17sGH
   r_0_0_3: https://link.www.typ-set.com/BchghT

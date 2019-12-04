@@ -1,6 +1,6 @@
 # Installation
 
-*Typ is currently only available for machines running 64 bit Windows. Other platforms are coming soon.*
+**Typ is currently only available for machines running 64 bit Windows. Other platforms are coming soon.**
 
 Follow these steps to download and install Typ.
 
@@ -17,13 +17,13 @@ To run Typ from anywhere on your machine, you must add it to your `PATH` environ
     - For instance, if `typ.exe` lives in `C:\Programs\Typ\typ.exe`, add `C:\Programs\Typ` to `PATH`
 - Run `typ` from a command line terminal to check it works
 
-## Install PDFtk Server (Optional)
+### Install PDFtk Server (Optional)
 
 Some features of Typ depend on a command line application called [PDFtk Server](https://www.pdflabs.com/tools/pdftk-server/).
 
-Only follow this step if you know you want to use a feature that depends on PDFtk Server.
+Only follow this step if you know you want to use a feature that depends on PDFtk Server. If you're just getting started with Typ, it's best to skip this step.
 
-### Instructions
+#### Instructions
 
 Download and install [PDFtk Server](https://www.pdflabs.com/tools/pdftk-server/) following the instructions on their website. Ensure it's available on your `PATH`, which can be tested after installation by running `pdftk` from the command line.
 

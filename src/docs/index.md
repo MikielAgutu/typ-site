@@ -11,7 +11,6 @@ Focus on content, not formatting.
 - Command line interface
 - Configure page dimensions, fonts, formatting, and so on
 - Produce PDFs usable by print on demand services
-- Cross platform (Soon...)
 
 ## Get started
 
