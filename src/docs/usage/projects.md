@@ -12,6 +12,8 @@ Create a new folder somewhere on the file system. This will be the Project folde
 
 Add Markdown files for the content of your document. Ensure each file has a `.md` file extension.
 
+You may also choose to add a configuration file, `config.yaml`. See [Configuration](configuration.md).
+
 ### Reserved file names
 
 There are certain file names that have special meanings in Typ. If present in your Project, Typ will automatically pick them up and use them.

@@ -36,6 +36,14 @@ Run `typ typeset --inputFilepaths text.md`.
 
 Using `text.md`, Typ will then create a formatted PDF called `output.pdf`.
 
+### *Note for Linux users* 🚨
+
+It might be necessary to run Typ with elevated permissions (e.g. with `sudo`).
+
+Your command line calls might look something more like this:
+
+`sudo ./typ typeset --inputFilepaths text.md`
+
 ### Changing the output file
 
 You can use the `--outputFilepath` argument to change the output file name and location.
@@ -46,7 +54,7 @@ Typ will now produce a file called `myDoc.pdf` instead of `output.pdf`.
 
 ### Aliases
 
-All command line arguments have short-hand aliases.
+Some command line arguments have short-hand aliases.
 
 `--inputFilepaths` is aliased by `-i`. `--outputFilepath` is aliased by `-o`.
 
@@ -72,7 +80,17 @@ Run `typ typeset -i text.md post-script.md -o myDoc.pdf`.
 
 ### Configure the formatting
 
-Typ gives you control over how your PDF is created through a configuration file.
+Typ gives you control over how your PDF is created through a set of configuration options.
+
+Let's use the `--fontSize` option from the command line.
+
+Run `typ typeset -i text.md post-script.md -o myDoc.pdf --fontSize 18pt`.
+
+You should see the difference by the way `myDoc.pdf` looks.
+
+### Configuration files
+
+Typ can read configuration options from a file also.
 
 Create a new file called `config.yaml` and paste in the following:
 
@@ -82,7 +100,7 @@ fontFamily: Arial
 pageSize: A5
 pageMargin: 70pt 60pt 70pt
 textLineHeight: 150%
-fontSize: 14pt
+fontSize: 18pt
 generateTableOfContents: false
 printPageNumbers: false
 printTitleMarginals: false
@@ -91,6 +109,8 @@ printTitleMarginals: false
 Run `typ typeset -i text.md post-script.md -o myDoc.pdf`
 
 You should see the difference by the way `myDoc.pdf` looks.
+
+Note that options specified as command line arguments take precedence over those in configuration files.
 
 ### Projects
 

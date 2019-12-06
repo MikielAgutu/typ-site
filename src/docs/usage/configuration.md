@@ -1,8 +1,16 @@
 # Configuration
 
-Typ is configured through a single YAML file, `config.yaml`.
+Configuration options can be supplied as either command line arguments, or YAML configuration file entires.
 
-The configuration file must be present in a Typ project. See [Projects](./projects.md) for more information about Project files.
+### Command line arguments
+
+Specify the name of the option prefixed by two hyphens, followed by the value: `typ typeset --[name] [value]`.
+
+There are some command line specific arguments. See [Command Line](./command-line.md).
+
+### Configuration files
+
+Put your configuration in a file called `config.yaml`. Typ will automatically use it if present in your [Project](./projects.md).
 
 ## Configuration reference
 
@@ -31,7 +39,7 @@ The links under the 'CSS' heading for each option have more information about va
 | `pageSize` | The size of the page | [`size`](https://developer.mozilla.org/en-US/docs/Web/CSS/@page/size) | `A5`, `4in 6in` |
 | `fontFamily` | Font for all text content. Currently supported fonts: `georgia`, `times new roman`, `arial` & `verdana` | [`font-family`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family) | `verdana` |
 
-### Example `config.yaml`
+### Example `config.yaml` file
 
 ```yaml
 title: My document
@@ -44,4 +52,10 @@ generateTableOfContents: false
 printPageNumbers: false
 printTitleMarginals: false
 pdfTkPath: C:\Programs\bin\pdftk.exe
+```
+
+### Example `typ typset` command line call
+
+```bash
+typ typset --title My document --pageMargin 70pt 60pt 70pt --generateTableOfContents false
 ```
