@@ -186,18 +186,25 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="first-level active"><a href="#command-line">Command line</a></li>
+            <li class="second-level"><a href="#linux">Linux</a></li>
+                
             <li class="second-level"><a href="#command-line-arguments-reference">Command line arguments reference</a></li>
                 
+                <li class="third-level"><a href="#general">General</a></li>
+                <li class="third-level"><a href="#configuration">Configuration</a></li>
                 <li class="third-level"><a href="#example-usage">Example usage</a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
 <h1 id="command-line">Command line</h1>
-<p>Typ is accessed via a command line interface. You can use it with the Windows Command Prompt, PowerShell, and so on. </p>
+<p>Typ is a command line tool. You can use it with the Windows Command Prompt, PowerShell, bash, and so on.</p>
 <p>General usage is <code>typ [command] [arguments]</code>.</p>
-<p>There is currently only one command, <code>typeset</code></p>
+<p>There is currently only one command, <code>typeset</code>.</p>
+<h3 id="linux">Linux</h3>
+<p>Note that it might be necessary to run Typ with elevated permissions (e.g. with <code>sudo</code>).</p>
 <h2 id="command-line-arguments-reference">Command line arguments reference</h2>
+<h3 id="general">General</h3>
 <table>
 <thead>
 <tr>
@@ -213,15 +220,17 @@
 <td>List of Markdown files to use to create a formatted PDF.</td>
 </tr>
 <tr>
-<td><code>--outputFilepaths</code></td>
+<td><code>--outputFilepath</code></td>
 <td><code>-o</code></td>
 <td>Output file path.</td>
 </tr>
 </tbody>
 </table>
-<p>Note that if <code>--inputFilepaths</code> is not specified, <code>typeset</code> will look for files in the working directory. This behavior is explained in more detail in <a href="../projects/">Projects</a>.</p>
+<p>Note that if <code>--inputFilepaths</code> is not specified, Typ will look for files in the working directory. This behavior is explained in more detail in <a href="../projects/">Projects</a>.</p>
+<h3 id="configuration">Configuration</h3>
+<p>Further configuration can be supplied through command line arguments. See <a href="../configuration/">Configuration</a>.</p>
 <h3 id="example-usage">Example usage</h3>
-<p><code>typ typeset -i text.md post-script.md -o myDoc.pdf</code></p></div>
+<p><code>typ typeset -i text.md post-script.md -o myDoc.pdf --pageSize A4</code></p></div>
         
         
     </div>

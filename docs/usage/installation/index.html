@@ -188,21 +188,50 @@
         <li class="first-level active"><a href="#installation">Installation</a></li>
             <li class="second-level"><a href="#install-typ">Install Typ</a></li>
                 
+                <li class="third-level"><a href="#windows-users">Windows users</a></li>
+                <li class="third-level"><a href="#linux-users">Linux users</a></li>
+                <li class="third-level"><a href="#path-environment-variable">PATH environment variable</a></li>
                 <li class="third-level"><a href="#install-pdftk-server-optional">Install PDFtk Server (Optional)</a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
 <h1 id="installation">Installation</h1>
-<p><strong>Typ is currently only available for machines running 64 bit Windows. Other platforms are coming soon.</strong></p>
 <p>Follow these steps to download and install Typ.</p>
 <h2 id="install-typ">Install Typ</h2>
 <ul>
-<li>Click this button to download Typ: <a href="https://link.www.typ-set.com/S17sGH"><button>Download Typ (Windows 64 bit)</button></a></li>
-<li>Unzip the folder and place it somewhere accessible on your machine (e.g <code>C:\Programs\Typ</code>)</li>
+<li>Click to download Typ:<ul>
+<li><a href="https://link.www.typ-set.com/wD5Fm2"><button>Download Typ (Windows 64 bit)</button></a></li>
+<li><a href="https://link.www.typ-set.com/ZMz1Wr"><button>Download Typ (Linux)</button></a></li>
+</ul>
+</li>
+<li>Extract the folder and place it somewhere accessible on your machine (e.g <code>C:\Programs\Typ</code>)</li>
 <li>Navigate to the installation folder from a command line terminal</li>
+</ul>
+<h3 id="windows-users">Windows users</h3>
+<ul>
 <li>Run <code>typ</code> to check it works</li>
 </ul>
+<h3 id="linux-users">Linux users</h3>
+<ul>
+<li>Make <code>typ</code> executable with <code>chmod</code><ul>
+<li><code>sudo chmod +x typ</code></li>
+</ul>
+</li>
+<li>Typ depends on Python 3 on Linux<ul>
+<li>It looks for Python 3 in <code>#!/usr/bin/python3</code></li>
+</ul>
+</li>
+<li>You may need to run Typ with elevated permissions (e.g. with <code>sudo</code>).<ul>
+<li>Run <code>sudo ./typ</code> to check it works</li>
+</ul>
+</li>
+<li>Typ has been tested on Ubuntu Linux<ul>
+<li>It may perform differently on other versions</li>
+</ul>
+</li>
+</ul>
+<h3 id="path-environment-variable"><code>PATH</code> environment variable</h3>
 <p>To run Typ from anywhere on your machine, you must add it to your <code>PATH</code> environment variable.</p>
 <ul>
 <li>Amend your <code>PATH</code> environment variable to point to the directory containing <code>typ.exe</code><ul>

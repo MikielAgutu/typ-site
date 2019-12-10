@@ -188,10 +188,12 @@
         <li class="first-level active"><a href="#getting-started">Getting started</a></li>
             <li class="second-level"><a href="#your-first-document">Your first document</a></li>
                 
+                <li class="third-level"><a href="#notes-for-linux-users">Notes for Linux users 🚨</a></li>
                 <li class="third-level"><a href="#changing-the-output-file">Changing the output file</a></li>
                 <li class="third-level"><a href="#aliases">Aliases</a></li>
                 <li class="third-level"><a href="#multiple-files">Multiple files</a></li>
                 <li class="third-level"><a href="#configure-the-formatting">Configure the formatting</a></li>
+                <li class="third-level"><a href="#configuration-files">Configuration files</a></li>
                 <li class="third-level"><a href="#projects">Projects</a></li>
                 <li class="third-level"><a href="#do-more-with-typ">Do more with Typ</a></li>
                 <li class="third-level"><a href="#contact">Contact</a></li>
@@ -227,12 +229,31 @@ Try and run it in your favorite IDE.
 
 <p>Run <code>typ typeset --inputFilepaths text.md</code>.</p>
 <p>Using <code>text.md</code>, Typ will then create a formatted PDF called <code>output.pdf</code>.</p>
+<h3 id="notes-for-linux-users"><em>Notes for Linux users</em> 🚨</h3>
+<ul>
+<li>Make <code>typ</code> executable with <code>chmod</code><ul>
+<li><code>sudo chmod +x typ</code></li>
+</ul>
+</li>
+<li>Typ depends on Python 3 on Linux<ul>
+<li>It looks for Python 3 in <code>#!/usr/bin/python3</code></li>
+</ul>
+</li>
+<li>You may need to run Typ with elevated permissions (e.g. with <code>sudo</code>).<ul>
+<li><code>sudo ./typ typeset --inputFilepaths text.md</code></li>
+</ul>
+</li>
+<li>Typ has been tested on Ubuntu Linux<ul>
+<li>It may perform differently on other versions</li>
+</ul>
+</li>
+</ul>
 <h3 id="changing-the-output-file">Changing the output file</h3>
 <p>You can use the <code>--outputFilepath</code> argument to change the output file name and location.</p>
 <p>Run <code>typ typeset --inputFilepaths text.md --outputFilepath myDoc.pdf</code></p>
 <p>Typ will now produce a file called <code>myDoc.pdf</code> instead of <code>output.pdf</code>.</p>
 <h3 id="aliases">Aliases</h3>
-<p>All command line arguments have short-hand aliases.</p>
+<p>Some command line arguments have short-hand aliases.</p>
 <p><code>--inputFilepaths</code> is aliased by <code>-i</code>. <code>--outputFilepath</code> is aliased by <code>-o</code>.</p>
 <p>Run <code>typ typeset -i text.md -o myDoc.pdf</code> to see the aliases in action.</p>
 <h3 id="multiple-files">Multiple files</h3>
@@ -247,14 +268,19 @@ Thanks for reading!
 <p>Run <code>typ typeset -i text.md post-script.md -o myDoc.pdf</code>.</p>
 <p><code>myDoc.pdf</code> should contain content from <code>text.md</code> and <code>post-script.md</code>.</p>
 <h3 id="configure-the-formatting">Configure the formatting</h3>
-<p>Typ gives you control over how your PDF is created through a configuration file.</p>
+<p>Typ gives you control over how your PDF is created through a set of configuration options.</p>
+<p>Let's use the <code>--fontSize</code> option from the command line.</p>
+<p>Run <code>typ typeset -i text.md post-script.md -o myDoc.pdf --fontSize 36pt</code>.</p>
+<p>You should see the difference by the way <code>myDoc.pdf</code> looks.</p>
+<h3 id="configuration-files">Configuration files</h3>
+<p>Typ can read configuration options from a file also.</p>
 <p>Create a new file called <code>config.yaml</code> and paste in the following:</p>
 <pre><code class="yaml">title: C# docs
 fontFamily: Arial
 pageSize: A5
 pageMargin: 70pt 60pt 70pt
 textLineHeight: 150%
-fontSize: 14pt
+fontSize: 18pt
 generateTableOfContents: false
 printPageNumbers: false
 printTitleMarginals: false
@@ -262,6 +288,7 @@ printTitleMarginals: false
 
 <p>Run <code>typ typeset -i text.md post-script.md -o myDoc.pdf</code></p>
 <p>You should see the difference by the way <code>myDoc.pdf</code> looks.</p>
+<p>Note that options specified as command line arguments take precedence over those in configuration files.</p>
 <h3 id="projects">Projects</h3>
 <p>For a work that consists of multiple files (front cover, multiple chapter files, preamble, etc), these should be stored in a single folder, termed a Project.</p>
 <p>A Project is just a normal folder on your file system that contains files that Typ can work with.</p>

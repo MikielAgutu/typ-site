@@ -5,7 +5,7 @@
 {{ download_typ_latest_button_windows }}
 {{ download_typ_latest_button_linux }}
 
-### 0.0.5 (06/12/2019)
+### 0.0.5 (10/12/2019)
 
 <a href="{{ r_0_0_5_windows }}">Download Typ (Windows 64 bit)</a>
 <br />
