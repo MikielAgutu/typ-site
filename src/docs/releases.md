@@ -1,8 +1,18 @@
 # Current release: {{ current_release_version }}
 
-Download the current release here: {{ download_typ_latest_button }}
+** Make sure to read [Installation](./usage/installation.md) to ensure Typ is installed correctly. **
 
-**Typ is currently only available for machines running 64 bit Windows. Other platforms are coming soon.**
+{{ download_typ_latest_button_windows }}
+{{ download_typ_latest_button_linux }}
+
+### 0.0.5 (06/12/2019)
+
+<a href="{{ r_0_0_5_windows }}">Download Typ (Windows 64 bit)</a>
+<br />
+<a href="{{ r_0_0_5_linux }}">Download Typ (Linux)</a>
+
+- Linux support
+- Specify configuration options as command line arguments
 
 ### 0.0.4 (18/11/2019)
 

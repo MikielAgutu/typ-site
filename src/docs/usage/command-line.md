@@ -19,7 +19,7 @@ Note that it might be necessary to run Typ with elevated permissions (e.g. with 
 | `--inputFilepaths` | `-i` | List of Markdown files to use to create a formatted PDF. |
 | `--outputFilepath` | `-o` | Output file path. |
 
-Note that if `--inputFilepaths` is not specified, `typeset` will look for files in the working directory. This behavior is explained in more detail in [Projects](./projects.md).
+Note that if `--inputFilepaths` is not specified, Typ will look for files in the working directory. This behavior is explained in more detail in [Projects](./projects.md).
 
 ### Configuration
 

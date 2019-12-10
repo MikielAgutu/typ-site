@@ -1,12 +1,14 @@
 # Configuration
 
-Configuration options can be supplied as either command line arguments, or YAML configuration file entires.
+Configuration options can be supplied as either command line arguments, or in a YAML configuration file.
+
+Examples are provided at the bottom of the page.
 
 ### Command line arguments
 
 Specify the name of the option prefixed by two hyphens, followed by the value: `typ typeset --[name] [value]`.
 
-There are some command line specific arguments. See [Command Line](./command-line.md).
+There exist some command line specific arguments. See [Command Line](./command-line.md) for details.
 
 ### Configuration files
 

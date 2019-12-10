@@ -6,11 +6,12 @@ Focus on content, not formatting.
 
 ## Features
 
-- Write content in [Markdown](usage/writing-markdown.md)
-- Syntax highlighting
+- [Markdown](usage/writing-markdown.md) to PDF conversion
 - Command line interface
+- Syntax highlighting
 - Configure page dimensions, fonts, formatting, and so on
 - Produce PDFs usable by print on demand services
+- Windows and Linux support
 
 ## Get started
 

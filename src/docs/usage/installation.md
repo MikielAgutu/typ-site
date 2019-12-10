@@ -1,15 +1,29 @@
 # Installation
 
-**Typ is currently only available for machines running 64 bit Windows. Other platforms are coming soon.**
-
 Follow these steps to download and install Typ.
 
 ## Install Typ
 
-- Click this button to download Typ: {{ download_typ_latest_button }}
-- Unzip the folder and place it somewhere accessible on your machine (e.g `C:\Programs\Typ`)
+- Click to download Typ:
+    - {{ download_typ_latest_button_windows }}
+    - {{ download_typ_latest_button_linux }}
+- Extract the folder and place it somewhere accessible on your machine (e.g `C:\Programs\Typ`)
 - Navigate to the installation folder from a command line terminal
+
+### Windows users
 - Run `typ` to check it works
+
+### Linux users
+- Make `typ` executable with `chmod`
+    - `sudo chmod +x typ`
+- Typ depends on Python 3 on Linux
+    - It looks for Python 3 in `#!/usr/bin/python3`
+- You may need to run Typ with elevated permissions (e.g. with `sudo`).
+    - Run `sudo ./typ` to check it works
+- Typ has been tested on Ubuntu Linux
+    - It may perform differently on other versions
+
+### `PATH` environment variable
 
 To run Typ from anywhere on your machine, you must add it to your `PATH` environment variable.
 

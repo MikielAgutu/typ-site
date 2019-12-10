@@ -36,13 +36,16 @@ Run `typ typeset --inputFilepaths text.md`.
 
 Using `text.md`, Typ will then create a formatted PDF called `output.pdf`.
 
-### *Note for Linux users* 🚨
+### *Notes for Linux users* 🚨
 
-It might be necessary to run Typ with elevated permissions (e.g. with `sudo`).
-
-Your command line calls might look something more like this:
-
-`sudo ./typ typeset --inputFilepaths text.md`
+- Make `typ` executable with `chmod`
+    - `sudo chmod +x typ`
+- Typ depends on Python 3 on Linux
+    - It looks for Python 3 in `#!/usr/bin/python3`
+- You may need to run Typ with elevated permissions (e.g. with `sudo`).
+    - `sudo ./typ typeset --inputFilepaths text.md`
+- Typ has been tested on Ubuntu Linux
+    - It may perform differently on other versions
 
 ### Changing the output file
 
@@ -84,7 +87,7 @@ Typ gives you control over how your PDF is created through a set of configuratio
 
 Let's use the `--fontSize` option from the command line.
 
-Run `typ typeset -i text.md post-script.md -o myDoc.pdf --fontSize 18pt`.
+Run `typ typeset -i text.md post-script.md -o myDoc.pdf --fontSize 36pt`.
 
 You should see the difference by the way `myDoc.pdf` looks.
 
