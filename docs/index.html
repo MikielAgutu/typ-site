@@ -186,6 +186,7 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="first-level active"><a href="#features">Features</a></li>
+        <li class="first-level "><a href="#example">Example</a></li>
         <li class="first-level "><a href="#get-started">Get started</a></li>
         <li class="first-level "><a href="#download-and-install">Download and install</a></li>
         <li class="first-level "><a href="#comments-questions">Comments? Questions?</a></li>
@@ -205,8 +206,24 @@
 <li>Produce PDFs usable by print on demand services</li>
 <li>Windows and Linux support</li>
 </ul>
+<h2 id="example">Example</h2>
+<p>Running the following command:</p>
+<p><code>typ typset</code></p>
+<p>Against this markdown:</p>
+<pre><code class="c#">int a = 5;
+int b = a + 2; //OK
+
+bool test = true;
+
+// Error. Operator '+' cannot be applied to operands of type 'int' and 'bool'.
+int c = a + test;
+</code></pre>
+
+<p>Produces this PDF:</p>
+<p><img alt="sample" src="sample.png" /></p>
+<p>See <a href="https://github.com/MikielAgutu/typ-site/tree/master/sample-project">the sample project</a> for the full PDF file.</p>
 <h2 id="get-started">Get started</h2>
-<p>New to Typ? See <a href="getting-started/">Getting Started</a>.</p>
+<p>See <a href="getting-started/">Getting Started</a>.</p>
 <h2 id="download-and-install">Download and install</h2>
 <p>See the <a href="usage/installation/">Installation</a> page.</p>
 <h2 id="comments-questions">Comments? Questions?</h2>
@@ -307,5 +324,5 @@
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-12-10 20:15:53
+Build Date UTC : 2020-03-26 12:13:49
 -->

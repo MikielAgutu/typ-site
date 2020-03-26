@@ -13,9 +13,33 @@ Focus on content, not formatting.
 - Produce PDFs usable by print on demand services
 - Windows and Linux support
 
+## Example
+
+Running the following command:
+
+`typ typset`
+
+Against this markdown:
+
+```c#
+int a = 5;
+int b = a + 2; //OK
+
+bool test = true;
+
+// Error. Operator '+' cannot be applied to operands of type 'int' and 'bool'.
+int c = a + test;
+```
+
+Produces this PDF:
+
+![sample](sample.png)
+
+See [the sample project](https://github.com/MikielAgutu/typ-site/tree/master/sample-project) for the full PDF file.
+
 ## Get started
 
-New to Typ? See [Getting Started](./getting-started.md).
+See [Getting Started](./getting-started.md).
 
 ## Download and install
 

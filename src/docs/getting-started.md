@@ -4,6 +4,12 @@ Typ turns plain Markdown into a formatted PDF, ready for print. It is accessed t
 
 ## Your first document
 
+We're going to make a PDF that looks like this:
+
+![sample](sample.png)
+
+(See [the sample project](https://github.com/MikielAgutu/typ-site/tree/master/sample-project) for the full PDF file)
+
 First install Typ. See [Installation](./usage/installation.md).
 
 Open a command line terminal. If Typ is not on your `PATH`, navigate to the installation folder from the terminal.
