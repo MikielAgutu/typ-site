@@ -1,0 +1,9 @@
+title: C# docs
+fontFamily: Arial
+pageSize: A5
+pageMargin: 70pt 60pt 70pt
+textLineHeight: 150%
+fontSize: 14pt
+generateTableOfContents: false
+printPageNumbers: false
+printTitleMarginals: false
