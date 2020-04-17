@@ -20,7 +20,7 @@ Follow these steps to download and install Typ.
     - It looks for Python 3 in `#!/usr/bin/python3`
 - You may need to run Typ with elevated permissions (e.g. with `sudo`).
     - Run `sudo ./typ` to check it works
-- Typ has been tested on Ubuntu Linux
+- Typ should work with most desktop distributions like CentOS, Debian, Fedora, Ubuntu, and derivatives
     - It may perform differently on other versions
 
 ### `PATH` environment variable

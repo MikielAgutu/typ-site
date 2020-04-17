@@ -9,9 +9,9 @@
 
 <a href="{{ r_0_0_5_windows }}">Download Typ (Windows 64 bit)</a>
 <br />
-<a href="{{ r_0_0_5_linux }}">Download Typ (Linux)</a>
+<a href="{{ r_0_0_5_linux }}">Download Typ (Linux 64 bit)</a>
 
-- Linux support
+- Linux support (Typ should work with most desktop distributions like CentOS, Debian, Fedora, Ubuntu, and derivatives)
 - Specify configuration options as command line arguments
 
 ### 0.0.4 (18/11/2019)
