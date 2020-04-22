@@ -28,3 +28,7 @@ Further configuration can be supplied through command line arguments. See [Confi
 ### Example usage
 
 `typ typeset -i text.md post-script.md -o myDoc.pdf --pageSize A4`
+
+Longer paths may need to be escaped with double quotes:
+
+`typ typeset -i text.md "C:\path\to the file\post-script.md" -o myDoc.pdf --pageSize A4`

@@ -87,6 +87,12 @@ Run `typ typeset -i text.md post-script.md -o myDoc.pdf`.
 
 `myDoc.pdf` should contain content from `text.md` and `post-script.md`.
 
+**Long filepaths**
+
+Note that longer paths may need to be escaped with double quotes, e.g:
+
+`typ typeset -i text.md "C:\path\to the file\post-script.md" -o myDoc.pdf`
+
 ### Configure the formatting
 
 Typ gives you control over how your PDF is created through a set of configuration options.

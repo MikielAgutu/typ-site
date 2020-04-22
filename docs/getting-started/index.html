@@ -270,6 +270,9 @@ Thanks for reading!
 
 <p>Run <code>typ typeset -i text.md post-script.md -o myDoc.pdf</code>.</p>
 <p><code>myDoc.pdf</code> should contain content from <code>text.md</code> and <code>post-script.md</code>.</p>
+<p><strong>Long filepaths</strong></p>
+<p>Note that longer paths may need to be escaped with double quotes, e.g:</p>
+<p><code>typ typeset -i text.md "C:\path\to the file\post-script.md" -o myDoc.pdf</code></p>
 <h3 id="configure-the-formatting">Configure the formatting</h3>
 <p>Typ gives you control over how your PDF is created through a set of configuration options.</p>
 <p>Let's use the <code>--fontSize</code> option from the command line.</p>
