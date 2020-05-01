@@ -17,10 +17,13 @@ nav:
   - Contact: contact.md
 site_dir: ../docs
 extra:
-  current_release_version: 0.0.5
-  download_typ_latest_button_windows: <a href="https://link.www.typ-set.com/wD5Fm2"><button>Download Typ (Windows 64 bit)</button></a>
-  download_typ_latest_button_linux: <a href="https://link.www.typ-set.com/ZMz1Wr"><button>Download Typ (Linux 64 bit)</button></a>
+  current_release_version: 0.0.6
+  download_typ_latest_button_windows: <a href="https://link.www.typ-set.com/yKMJxR"><button>Download Typ (Windows 64 bit)</button></a>
+  download_typ_latest_button_linux: <a href="https://link.www.typ-set.com/Ujexh8"><button>Download Typ (Linux 64 bit)</button></a>
   
+  r_0_0_6_windows: https://link.www.typ-set.com/yKMJxR
+  r_0_0_6_linux: https://link.www.typ-set.com/Ujexh8
+
   r_0_0_5_windows: https://link.www.typ-set.com/wD5Fm2
   r_0_0_5_linux: https://link.www.typ-set.com/ZMz1Wr
 

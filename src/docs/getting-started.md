@@ -46,11 +46,11 @@ Using `text.md`, Typ will then create a formatted PDF called `output.pdf`.
 
 - Make `typ` executable with `chmod`
     - `sudo chmod +x typ`
-- Typ depends on Python 3 on Linux
-    - It looks for Python 3 in `#!/usr/bin/python3`
+- Typ depends on Python 3.6 on Linux
+    - It looks for Python 3.6 in `#!/usr/bin/python3`
 - You may need to run Typ with elevated permissions (e.g. with `sudo`).
     - `sudo ./typ typeset --inputFilepaths text.md`
-- Typ should work with most desktop distributions like CentOS, Debian, Fedora, Ubuntu, and derivatives
+- Typ has been tested only on Ubuntu Linux 64 bit
     - It may perform differently on other versions
 
 ### Changing the output file

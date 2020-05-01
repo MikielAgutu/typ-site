@@ -186,6 +186,8 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="first-level active"><a href="#writing-markdown">Writing Markdown</a></li>
+            <li class="second-level"><a href="#images">Images</a></li>
+                
             <li class="second-level"><a href="#syntax-highlighting">Syntax highlighting</a></li>
                 
                 <li class="third-level"><a href="#syntax-highlighting-markdown-code-reference">Syntax highlighting Markdown code reference</a></li>
@@ -198,6 +200,15 @@
 <p>Typ allows you to write your document's content in a simple, lightweight text format called Markdown. </p>
 <p>With Typ, you can specify the important parts of your document's appearance, like font style and page size. Typ will combine your configuration with it's own sensible formatting style to produce a PDF.</p>
 <p>You can learn more about how to write Markdown on <a href="https://www.markdownguide.org/">Markdown Guide</a>.</p>
+<h2 id="images">Images</h2>
+<p>Typ supports images using the standard Markdown syntax. Currently only <code>.png</code> format images are supported.</p>
+<p>Examples:</p>
+<pre><code>![my-image](C:\path\to\my-image.png)
+</code></pre>
+
+<pre><code>![my-relative-image](./image.png)
+</code></pre>
+
 <h2 id="syntax-highlighting">Syntax highlighting</h2>
 <p>Typ supports syntax highlighting for Markdown code blocks.</p>
 <p>In order to turn on syntax highlighting for a code block, you need to supply a language code.</p>

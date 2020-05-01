@@ -11,7 +11,7 @@ Focus on content, not formatting.
 - Syntax highlighting
 - Configure page dimensions, fonts, formatting, and so on
 - Produce PDFs usable by print on demand services
-- Windows and Linux support
+- Windows and Ubuntu Linux support
 
 ## Example
 

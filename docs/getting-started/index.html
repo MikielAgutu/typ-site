@@ -194,7 +194,9 @@
                 <li class="third-level"><a href="#multiple-files">Multiple files</a></li>
                 <li class="third-level"><a href="#configure-the-formatting">Configure the formatting</a></li>
                 <li class="third-level"><a href="#configuration-files">Configuration files</a></li>
-                <li class="third-level"><a href="#projects">Projects</a></li>
+                <li class="third-level"><a href="#images">Images</a></li>
+            <li class="second-level"><a href="#projects">Projects</a></li>
+                
                 <li class="third-level"><a href="#do-more-with-typ">Do more with Typ</a></li>
                 <li class="third-level"><a href="#contact">Contact</a></li>
     </ul>
@@ -238,15 +240,15 @@ Try and run it in your favorite IDE.
 <li><code>sudo chmod +x typ</code></li>
 </ul>
 </li>
-<li>Typ depends on Python 3 on Linux<ul>
-<li>It looks for Python 3 in <code>#!/usr/bin/python3</code></li>
+<li>Typ depends on Python 3.6 on Linux<ul>
+<li>It looks for Python 3.6 in <code>#!/usr/bin/python3</code></li>
 </ul>
 </li>
 <li>You may need to run Typ with elevated permissions (e.g. with <code>sudo</code>).<ul>
 <li><code>sudo ./typ typeset --inputFilepaths text.md</code></li>
 </ul>
 </li>
-<li>Typ should work with most desktop distributions like CentOS, Debian, Fedora, Ubuntu, and derivatives<ul>
+<li>Typ has been tested only on Ubuntu Linux 64 bit<ul>
 <li>It may perform differently on other versions</li>
 </ul>
 </li>
@@ -295,14 +297,25 @@ printTitleMarginals: false
 <p>Run <code>typ typeset -i text.md post-script.md -o myDoc.pdf</code></p>
 <p>You should see the difference by the way <code>myDoc.pdf</code> looks.</p>
 <p>Note that options specified as command line arguments take precedence over those in configuration files.</p>
-<h3 id="projects">Projects</h3>
+<h3 id="images">Images</h3>
+<p>Typ supports images using the standard Markdown syntax. Currently only <code>.png</code> format images are supported.</p>
+<p>Let's include this image in our document:</p>
+<p><img alt="csharp-logo" src="../csharp-logo.png" /></p>
+<p>Download the image somewhere on your machine.</p>
+<p>Add the following line to <code>text.md</code>, using the path to the image you downloaded:</p>
+<pre><code>![csharp-logo](C:\path\to\logo.png)
+</code></pre>
+
+<p>Run <code>typ typeset -i text.md post-script.md -o myDoc.pdf</code>.</p>
+<p>You should see the image appear in the document.</p>
+<h2 id="projects">Projects</h2>
 <p>For a work that consists of multiple files (front cover, multiple chapter files, preamble, etc), these should be stored in a single folder, termed a Project.</p>
 <p>A Project is just a normal folder on your file system that contains files that Typ can work with.</p>
 <p>By following this guide, you have created a Project already.</p>
 <p>Run <code>typ typeset</code>. Note the absence of command line arguments.</p>
 <p>Typ will create a PDF, <code>output.pdf</code>, with the combined contents of <code>text.md</code> and <code>post-script.md</code>.</p>
 <p>Notice the contents of <code>post-script.md</code> now appears before <code>text.md</code>.</p>
-<p>In this context, <code>typ typeset</code> will look for all the Markdown files in the working directory. The files are sorted in alphabetical order using the file name, and then combined. The combined text is then used to produce a formatted PDF.</p>
+<p>In Projects, <code>typ typeset</code> will look for all the Markdown files in the working directory. The files are sorted in alphabetical order using the file name, and then combined. The combined text is then used to produce a formatted PDF.</p>
 <p>You'll have to use a naming convention to ensure the files appear in the correct order. For instance, rename <code>text.md</code> to <code>001-text.md</code>, and <code>post-script.md</code> to <code>002.post-script.md</code>.</p>
 <p>Run <code>typ typeset</code> again, and the text will be in the correct order.</p>
 <h3 id="do-more-with-typ">Do more with Typ</h3>
