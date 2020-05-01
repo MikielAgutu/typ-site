@@ -121,7 +121,27 @@ You should see the difference by the way `myDoc.pdf` looks.
 
 Note that options specified as command line arguments take precedence over those in configuration files.
 
-### Projects
+### Images
+
+Typ supports images using the standard Markdown syntax. Currently only `.png` format images are supported.
+
+Let's include this image in our document:
+
+![csharp-logo](./csharp-logo.png)
+
+Download the image somewhere on your machine.
+
+Add the following line to `text.md`, using the path to the image you downloaded:
+
+```
+![csharp-logo](C:\path\to\logo.png)
+```
+
+Run `typ typeset -i text.md post-script.md -o myDoc.pdf`.
+
+You should see the image appear in the document.
+
+## Projects
 
 For a work that consists of multiple files (front cover, multiple chapter files, preamble, etc), these should be stored in a single folder, termed a Project.
 
@@ -135,7 +155,7 @@ Typ will create a PDF, `output.pdf`, with the combined contents of `text.md` and
 
 Notice the contents of `post-script.md` now appears before `text.md`.
 
-In this context, `typ typeset` will look for all the Markdown files in the working directory. The files are sorted in alphabetical order using the file name, and then combined. The combined text is then used to produce a formatted PDF.
+In Projects, `typ typeset` will look for all the Markdown files in the working directory. The files are sorted in alphabetical order using the file name, and then combined. The combined text is then used to produce a formatted PDF.
 
 You'll have to use a naming convention to ensure the files appear in the correct order. For instance, rename `text.md` to `001-text.md`, and `post-script.md` to `002.post-script.md`.
 

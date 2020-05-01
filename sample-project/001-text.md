@@ -15,3 +15,5 @@ int c = a + test;
  ```
 
 Try and run it in your favorite IDE.
+
+![csharp-logo](./csharp-logo.png)

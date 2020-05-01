@@ -8,6 +8,20 @@ With Typ, you can specify the important parts of your document's appearance, lik
 
 You can learn more about how to write Markdown on [Markdown Guide](https://www.markdownguide.org/).
 
+## Images
+
+Typ supports images using the standard Markdown syntax. Currently only `.png` format images are supported.
+
+Examples:
+
+```
+![my-image](C:\path\to\my-image.png)
+```
+
+```
+![my-relative-image](./image.png)
+```
+
 ## Syntax highlighting
 
 Typ supports syntax highlighting for Markdown code blocks.
